@@ -1,8 +1,8 @@
-# Week 11 Independent Project: Dr. SillyStringz's Factory Database Solution!
+# Week 13 Two Day Project: Build Your Own API
 
-#### A website that allows Factory Managers to track their Engineers and Machines!
+#### Custom built API offering a helpful index of the signs, and symptons of your pet's poop. Then, there is information that will give you helpful information on  wellness advice based on the  about health concerns, and cures through analizing your pet's poop
 
-#### By Ashe Urban
+#### By Ashe Urban, Caroline Cerussi, Liam Campbell
 
 ## Technologies Used
 
@@ -28,16 +28,16 @@ _You've been contracted by the factory of the famous Dr. Sillystringz to build a
 * _Add and Delete Engineers from Machines._
 
 
-_Link to assignment:_ https://epicenter.epicodus.com/courses/968/code_reviews/5862
+_Link to Github Repository:_ https://github.com/AsheUrban/PoopScoop.Solution
 
-### Dr. SillyStringz Factory
+### Da Poop Scoop
 
 _You must follow the naming conventions for your project. Projects that do not follow these conventions will not be reviewed and will be returned not passing._
 
 _Use your first name and last name to name your database in the following way:_
 
-_Production Database:_ first_last
-_Main Project Folder:_ Factory
+_Production Database:_ poop_scoop
+_Main Project Folder:_ PoopScoop.Solution
 
 ## Setup/Installation Requirements
 
@@ -47,7 +47,7 @@ _Main Project Folder:_ Factory
 
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=[first_last];uid=root;pwd=[password];"
+      "DefaultConnection": "Server=localhost;Port=3306;database=[poop_scoop];uid=root;pwd=[password];"
   }
 }
 
@@ -66,6 +66,6 @@ _NOTE:_ [password] should be replaced by your password. Do not include square br
 
 ## Contact Information
 
-_Please contact me with any questions or contribuitions, ashe@goldentongue.com_
+_Please contact us with any questions or contribuitions, ashe@goldentongue.com_, caroceru@gmail.com, liam22campbell@gmail.com
 
-Copyright(c) July 2022 Ashe Urban
+Copyright(c) August 2022 Ashe Urban, Caroline Cerussi, Liam Campbell
