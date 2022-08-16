@@ -1,6 +1,6 @@
 # Week 13 Two Day Project: Build Your Own API
 
-#### Custom built API offering a helpful index of the signs, and symptons of your pet's poop. Then, there is information that will give you helpful information on  wellness advice based on the  about health concerns, and cures through analizing your pet's poop
+#### Custom built API offering a helpful index of the signs, and symptons of your pet's poop. Then, there is information that will give you helpful information on  wellness advice based on the  about health concerns, and cures through analizing your pet's poop.
 
 #### By Ashe Urban, Caroline Cerussi, Liam Campbell
 
@@ -16,47 +16,68 @@
 
 ## Description
 
-_You've been contracted by the factory of the famous Dr. Sillystringz to build an application to keep track of their machine repairs. You are to build an MVC web application to manage their engineers, and the machines they are licensed to fix. The factory manager should be able to add a list of engineers, a list of machines, and specify which engineers are licensed to repair which machines. There should be a many-to-many relationship between Engineers and Machines. An engineer can be licensed to repair (belong to) many machines (such as the Dreamweaver, the Bubblewrappinator, and the Laughbox) and a machine can have many engineers licensed to repair it_
+_This API was designed aid in the quick and efficient identification of 16 different types of canine fecal matter. In addition to identification, this API also provides information on health grade, problem, and potential solutions._
 
-* _List of all Engineers._
-* _List of all Machines._
-* _Engineer Details including Machines they work on._
-* _Machine Details including Engineers that work on them._
-* _Add new Engineers._
-* _Add new Machines._
-* _Add and Delete Machines from Engineers._
-* _Add and Delete Engineers from Machines._
+_This API includes data on the following properties:_
 
+* _Consistency_
+  * _soft, liquid, hard_
 
-_Link to Github Repository:_ https://github.com/AsheUrban/PoopScoop.Solution
+* _Volume_
+  * _average, above average, below average_
+* _Color_
+  * _brown, pink or purple, orange or yellow, green, grey, black, or white_
 
-### Da Poop Scoop
+* _Content_
+  * _none, rice-like polka-dots, red streak, grass and random stuff, fur_
 
-_You must follow the naming conventions for your project. Projects that do not follow these conventions will not be reviewed and will be returned not passing._
+* _Coating_
+  * _none, greasy, mucus_
 
-_Use your first name and last name to name your database in the following way:_
+* _Grade_
+  * _A, A-, B+, B, B-, C, C-, D, D-, F_
+
+* _Problem_
+  * _A brief description of possible causes._
+
+* _Solution_
+  * _A recommended course of action._
+
+_For best results querying one property at a time, will return best results. If evaluating for two or more properties it is reccommended that two or more api calls are made and results appended together._
+
+## Disclaimers -- IMPORTANT
+
+_This API was not developed by a licensed veterenarian and is based on information found at:_ https://www.becopets.com/blogs/news/healthy-dog-pvoo-chart. 
+
+_This API is not intended for use in evaluation of human or cat fecal matter._
+
+## Link to Git Hub Repository
+
+https://github.com/AsheUrban/PoopScoop.Solution
+
+### Da Poop Scoop Naming Conventions
 
 _Production Database:_ poop_scoop
 _Main Project Folder:_ PoopScoop.Solution
 
 ## Setup/Installation Requirements
 
-* _Clone or download responsitory to your local._
-* _Cd into Factory and run dotnet restore, dotnet build to confirm the project has no errors._
+* _Clone or download repository to your local._
+* _Cd into PoopScoop and run dotnet restore, dotnet build to confirm the project has no errors._
 * _Touch appsettings.json and add the following configuration:_
 
-{
+<pre>{
   "ConnectionStrings": {
       "DefaultConnection": "Server=localhost;Port=3306;database=[poop_scoop];uid=root;pwd=[password];"
   }
-}
+}</pre>
 
 * _Run dotnet ef migrations add Initial and dotnet ef database update to build database._
 * _Then use dotnet watch run to run web application._
 
 _NOTE:_ [password] should be replaced by your password. Do not include square brackets in final configuration.
 
-## Known Bugs -- IMPORTANT --
+## Known Bugs
 
 * _No known bugs._
 
@@ -66,6 +87,6 @@ _NOTE:_ [password] should be replaced by your password. Do not include square br
 
 ## Contact Information
 
-_Please contact us with any questions or contribuitions, ashe@goldentongue.com_, caroceru@gmail.com, liam22campbell@gmail.com
+_Please contact us with any questions or contribuitions, ashe@goldentongue.com, caroceru@gmail.com, liam22campbell@gmail.com_
 
 Copyright(c) August 2022 Ashe Urban, Caroline Cerussi, Liam Campbell
