@@ -25,7 +25,9 @@ _This API includes data on the following properties:_
 
 * _Volume_
   * _average, above average, below average_
+  
 * _Color_
+  ![poopImage](img/poop.png)
   * _brown, pink or purple, orange or yellow, green, grey, black, or white_
 
 * _Content_
@@ -44,6 +46,8 @@ _This API includes data on the following properties:_
   * _A recommended course of action._
 
 _For best results querying one property at a time, will return best results. If evaluating for two or more properties it is reccommended that two or more api calls are made and results appended together._
+
+![poopImage](img/poopchart.png)
 
 ## Disclaimers -- IMPORTANT
 
