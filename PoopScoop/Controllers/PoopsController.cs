@@ -21,9 +21,42 @@ namespace PoopScoop.Controllers
 		}
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Poop>>> Get()
+    public async Task<ActionResult<IEnumerable<Poop>>> Get(string consistency, string volume, string color, string content, string coating, string grade, string problem, string solution)
     {
-      return await _db.Poops.ToListAsync();
+      var query = _db.Poops.AsQueryable();
+      if (consistency != null )
+      {
+        query = query.Where(entry => entry.Consistency == consistency);
+      }
+      if (volume != null )
+      {
+        query = query.Where(entry => entry.Volume == volume);
+      }
+      if (color != null )
+      {
+        query = query.Where(entry => entry.Color == color);
+      }
+      if (content != null )
+      {
+        query = query.Where(entry => entry.Content == content);
+      }
+      if (coating != null )
+      {
+        query = query.Where(entry => entry.Coating == coating);
+      }
+      if (grade != null )
+      {
+        query = query.Where(entry => entry.Grade == grade);
+      }
+      if (problem != null )
+      {
+        query = query.Where(entry => entry.Problem == problem);
+      }
+      if (solution != null )
+      {
+        query = query.Where(entry => entry.Solution == solution);
+      }
+      return await query.ToListAsync();
     }
 
     [HttpPost]
@@ -75,7 +108,6 @@ namespace PoopScoop.Controllers
       return NoContent();
     }
      
-			
     private bool PoopExists(int id)
     {
       return _db.Poops.Any(e => e.PoopId == id);
@@ -95,6 +127,5 @@ namespace PoopScoop.Controllers
       
       return NoContent();
     }
-
 	}
 }
