@@ -83,7 +83,9 @@ _NOTE:_ [password] should be replaced by your password. Do not include square br
 
 ## Known Bugs
 
-* _No known bugs._
+* _No known bugs in API._
+* _README.md doesn't render in github correctly. Use view in VSC to see images._
+
 
 ## License
 
