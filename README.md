@@ -1,6 +1,6 @@
 # Week 13 Two Day Project: Build Your Own API
 
-#### Custom built API offering a helpful index of the signs, and symptons of your pet's poop. Then, there is information that will give you helpful information on  wellness advice based on the  about health concerns, and cures through analizing your pet's poop.
+#### Custom built API offering useful information in the identificiation and health of your dog's stool.
 
 #### By Ashe Urban, Caroline Cerussi, Liam Campbell
 
@@ -61,8 +61,8 @@ https://github.com/AsheUrban/PoopScoop.Solution
 
 ### Da Poop Scoop Naming Conventions
 
-_Production Database:_ poop_scoop
-_Main Project Folder:_ PoopScoop.Solution
+* _Production Database:_ poop_scoop
+* _Main Project Folder:_ PoopScoop.Solution
 
 ## Setup/Installation Requirements
 
